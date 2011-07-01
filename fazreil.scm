@@ -14,11 +14,16 @@
 			(imagewidth (/ (car(gimp-image-width (car(file-png-load 1 file file)))) 2) )
 			(imageheight (/ (car(gimp-image-height (car(file-png-load 1 file file)))) 2) )
 		)
+		;set foreground color to white
+		(gimp-palette-set-foreground '(255 255 255))
+
 		;display the image
 		(let *(
 			(textlayer (car (gimp-text-fontname ori -1 (- imagewidth 100) (- imageheight 100) watermark 0 1 100 1 "Sans")))
 			)
-			(gimp-drawable-transform-rotate-default textlayer 45 1 imagewidth imageheight 1 0)
+			(gimp-drawable-transform-rotate-default textlayer (- 0 0.7845) 1 imagewidth imageheight 1 0)
+			(plug-in-bump-map 1 ori textlayer textlayer 135 45 3 0 0 0 0 1 0 0)
+			(gimp-layer-set-opacity textlayer 50)
 		)
 		(gimp-display-new ori)
 		
