@@ -16,7 +16,7 @@
 		)
 		;display the image
 		(gimp-display-new ori)
-		(gimp-text-fontname -1 -1 (/ (gimp-image-height ori) 2) (/ (gimp-image-width ori) 2) watermark 0 1 10 1 "Sans")
+		(gimp-text-fontname -1 -1 (/ (car(gimp-image-height ori)) 2) (/ (car(gimp-image-width ori)) 2) watermark 0 1 10 1 "Sans")
 	)
 
 )
@@ -32,5 +32,5 @@
    SF-STRING "Watermark" "Conto"      	            ; default parameters
    SF-DIRNAME "Original Image Directory" "/"
    SF-DIRNAME "Output folder" "/"
-   SF-FILENAME "File input" "/karja/GIMPFU/Automation/Before"
+   SF-FILENAME "File input" "D:/karja/GIMPFU/Automation/Before"
 )
