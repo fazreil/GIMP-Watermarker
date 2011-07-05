@@ -15,7 +15,7 @@
 (define (stamp-watermark ori imagewidth imageheight watermark font)
 	(let* 
 		(
-			(textlayer (car (gimp-text-fontname ori -1 (- imagewidth 100) (- imageheight 100) watermark 0 1 20 1 font)))
+			(textlayer (car (gimp-text-fontname ori -1 (- imagewidth 100) (- imageheight 100) watermark 0 1 50 1 font)))
 		)
 		;rotate layer -45 degree
 		(gimp-drawable-transform-rotate-default textlayer (- 0 0.7845) 1 imagewidth imageheight 1 0)
@@ -45,6 +45,7 @@
 				(stamp-watermark ori imagewidth imageheight watermark font)
 				;(gimp-display-new ori)
 				(gimp-image-clean-all ori)
+				(gimp-message filename)
 				(file-png-save-defaults 1 ori (car (gimp-image-get-active-layer ori)) filename filename)
 			)
 			(set! filelist (cdr filelist))
