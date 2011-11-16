@@ -32,7 +32,7 @@
 
 )
 
-(script-fu-register                                 ; I always forget these ...
+(script-fu-register                                 
    "MI-Watermarker"                                 ; script name to register
    "<Image>/Fazreil/WatermarkX"     				; where it goes
    "Watermarks the images found in the given path"  ; script description

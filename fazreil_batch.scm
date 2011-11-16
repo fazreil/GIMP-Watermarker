@@ -66,7 +66,7 @@
 	)
 )
 
-(script-fu-register                                 					; I always forget these ...
+(script-fu-register                                 					
    "MI-BWatermarker"                                					; script name to register
    "<Image>/Fazreil/_MI-Watermarker (PNG)"								; where it goes
    "Fazreil Innovation: Watermarks the images found in the given path"  ; script description
@@ -108,10 +108,10 @@
 	)
 )
 
-(script-fu-register                                 					; I always forget these ...
+(script-fu-register                                 					
    "MI-JPGWatermarker"                                					; script name to register
    "<Image>/Fazreil/_MI-Watermarker (JPG)"								; where it goes
-   "Fazreil Innovation: Watermarks the images found in the given path"  	; script description
+   "Fazreil Innovation: Watermarks the images found in the given path"  ; script description
    "Fazreil Amreen bin Abdul Jalil"                 					; author
    "Copyright 2011 by Fazreil.jalil; GNU GPL"  							; copyright
    "2011-07-01"                                     					; date
@@ -128,10 +128,10 @@
 	(MI-BWatermarker watermark inputfolder font size)
 )
 
-(script-fu-register                                 					; I always forget these ...
-   "MI-UWatermarker"                                						; script name to register
-   "<Image>/Fazreil/_MI-Watermarker (Utlimate)"										; where it goes
-   "Fazreil Innovation: Watermarks the images found in the given path"  	; script description
+(script-fu-register                                 					
+   "MI-UWatermarker"                                					; script name to register
+   "<Image>/Fazreil/_MI-Watermarker (Utlimate)"							; where it goes
+   "Fazreil Innovation: Watermarks the images found in the given path"  ; script description
    "Fazreil Amreen bin Abdul Jalil"                 					; author
    "Copyright 2011 by Fazreil.jalil; GNU GPL"  							; copyright
    "2011-07-01"                                     					; date
