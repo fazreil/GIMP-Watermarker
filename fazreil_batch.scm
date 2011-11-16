@@ -68,8 +68,8 @@
 
 (script-fu-register                                 					; I always forget these ...
    "MI-BWatermarker"                                					; script name to register
-   "<Image>/MIMOS/_MI-Watermarker (PNG)"								; where it goes
-   "MIMOS Innovation: Watermarks the images found in the given path"  	; script description
+   "<Image>/Fazreil/_MI-Watermarker (PNG)"								; where it goes
+   "Fazreil Innovation: Watermarks the images found in the given path"  ; script description
    "Fazreil Amreen bin Abdul Jalil"                 					; author
    "Copyright 2011 by Fazreil.jalil; GNU GPL"  							; copyright
    "2011-07-01"                                     					; date
@@ -100,7 +100,7 @@
 				(stamp-watermark ori imagewidth imageheight watermark font size)
 				;(gimp-display-new ori)
 				(gimp-image-clean-all ori)
-				(file-jpeg-save 	1		 	ori 	(car (gimp-image-get-active-layer ori))	filename 											filename 											1 0 0 0 "Copyright MIMOS 2011" 						1 1 0 1)
+				(file-jpeg-save 	1		 	ori 	(car (gimp-image-get-active-layer ori))	filename 											filename 											1 0 0 0 "Copyright Fazreil 2011" 						1 1 0 1)
 			)
 			(set! filelist (cdr filelist))
 		)
@@ -110,8 +110,8 @@
 
 (script-fu-register                                 					; I always forget these ...
    "MI-JPGWatermarker"                                					; script name to register
-   "<Image>/MIMOS/_MI-Watermarker (JPG)"								; where it goes
-   "MIMOS Innovation: Watermarks the images found in the given path"  	; script description
+   "<Image>/Fazreil/_MI-Watermarker (JPG)"								; where it goes
+   "Fazreil Innovation: Watermarks the images found in the given path"  	; script description
    "Fazreil Amreen bin Abdul Jalil"                 					; author
    "Copyright 2011 by Fazreil.jalil; GNU GPL"  							; copyright
    "2011-07-01"                                     					; date
@@ -130,8 +130,8 @@
 
 (script-fu-register                                 					; I always forget these ...
    "MI-UWatermarker"                                						; script name to register
-   "<Image>/MIMOS/_MI-Watermarker (Utlimate)"										; where it goes
-   "MIMOS Innovation: Watermarks the images found in the given path"  	; script description
+   "<Image>/Fazreil/_MI-Watermarker (Utlimate)"										; where it goes
+   "Fazreil Innovation: Watermarks the images found in the given path"  	; script description
    "Fazreil Amreen bin Abdul Jalil"                 					; author
    "Copyright 2011 by Fazreil.jalil; GNU GPL"  							; copyright
    "2011-07-01"                                     					; date

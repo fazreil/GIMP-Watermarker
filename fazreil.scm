@@ -34,7 +34,7 @@
 
 (script-fu-register                                 ; I always forget these ...
    "MI-Watermarker"                                 ; script name to register
-   "<Image>/MIMOS/Watermark"     					; where it goes
+   "<Image>/Fazreil/WatermarkX"     				; where it goes
    "Watermarks the images found in the given path"  ; script description
    "Fazreil Amreen bin Abdul Jalil"                 ; author
    "Copyright 2011 by Fazreil.jalil; GNU GPL"  		; copyright
